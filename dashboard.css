@@ -1,0 +1,529 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin:auto;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #1b5e20;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a,
+.navbar span {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: #388e3c;
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dashboard-title {
+    text-align: center;
+    color: #2e7d32;
+    margin: 30px 0;
+    font-size: 30px;
+}
+
+.success-message {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.message {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #ffebee;
+    color: #c62828;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/* Summary */
+
+.summary-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.summary-card {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.summary-card i {
+    font-size: 35px;
+    color: #2e7d32;
+    margin-bottom: 12px;
+}
+
+.summary-card h3 {
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.summary-card p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* Dashboard Sections */
+
+.dashboard-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-section h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    margin: 0;
+}
+
+.section-heading button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.section-heading button:hover {
+    background-color: #1b5e20;
+}
+
+
+/* Finance */
+
+.finance-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.finance-card {
+    padding: 25px;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.finance-card i {
+    font-size: 32px;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.finance-card h3 {
+    margin-bottom: 10px;
+}
+
+.finance-card p {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.finance-card small {
+    color: #777;
+}
+
+
+/* Tables */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+table th {
+    background-color: #1b5e20;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* Buttons */
+
+.delete-button {
+    background-color: #c62828;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #b71c1c;
+}
+
+.complete-button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-button:hover {
+    background-color: #1b5e20;
+}
+
+.completed-text {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.status {
+    padding: 5px 10px;
+    background-color: #fff3cd;
+    border-radius: 5px;
+}
+
+
+/* Feedback */
+
+.feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.feedback-card {
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.feedback-card h3 {
+    color: #1b5e20;
+    margin-bottom: 8px;
+}
+
+.feedback-card p {
+    margin: 8px 0;
+}
+
+.feedback-card .rating {
+    color: #f9a825;
+    font-size: 18px;
+}
+
+.feedback-card small {
+    color: #777;
+}
+
+
+/* Popup */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.popup-content {
+    width: 450px;
+    max-width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.large-popup {
+    width: 600px;
+}
+
+.popup-content h2 {
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.close {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #555;
+}
+
+.close:hover {
+    color: #c62828;
+}
+
+
+/* Forms */
+
+.popup-content label {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.popup-content input,
+.popup-content select,
+.popup-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.popup-content textarea {
+    resize: vertical;
+}
+
+.popup-content form button {
+    margin-top: 20px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e7d32;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.popup-content form button:hover {
+    background-color: #1b5e20;
+}
+
+
+/* Permission */
+
+.permission-container {
+    width: 500px;
+    max-width: 90%;
+    margin: 80px auto;
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.permission-icon {
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #ffebee;
+    color: #c62828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.permission-icon i {
+    font-size: 40px;
+}
+
+.permission-container h2 {
+    margin: 20px 0 10px;
+    color: #c62828;
+}
+
+.permission-container p {
+    margin-bottom: 25px;
+}
+
+.login-button {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    padding: 11px 25px;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #1b5e20;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 245px;
+}
+
+
+/* Responsive */
+
+@media(max-width: 900px) {
+
+    .summary-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .finance-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media(max-width: 600px) {
+
+    .summary-section {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-right {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dashboard-section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .permission-container {
+        margin: 50px auto;
+        padding: 25px;
+    }
+
+}
+.farm-information {
+    margin-bottom: 20px;
+}
+
+.farm-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.farm-row strong {
+    color: #1b5e20;
+}
+
+.farm-row span {
+    text-align: right;
+}
+
+.farm-information + .dashboard-button {
+    margin-top: 10px;
+}

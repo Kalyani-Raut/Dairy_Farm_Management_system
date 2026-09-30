@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+header h1 {
+    font-size: 32px;
+    margin:auto;
+}
+
+/* Navigation */
+
+.navbar {
+    background-color: #1b5e20;
+    padding: 15px 25px;
+    text-align: left;
+}
+.navbar a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #388e3c;
+}
+
+.home-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Profile Container */
+
+.profile-container {
+    width: 550px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Person Icon */
+
+.profile-icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    background-color: #2e7d32;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon i {
+    font-size: 45px;
+}
+
+.profile-container h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 30px;
+}
+
+/* Profile Information */
+
+.profile-information {
+    width: 100%;
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-row label {
+    font-weight: bold;
+    color: #1b5e20;
+}
+
+.profile-row p {
+    text-align: right;
+    max-width: 60%;
+}
+
+/* Buttons */
+
+.profile-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.profile-button,
+.logout-button {
+    text-decoration: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.profile-button {
+    background-color: #2e7d32;
+}
+
+.profile-button:hover {
+    background-color: #1b5e20;
+}
+
+.logout-button {
+    background-color: #c62828;
+}
+
+.logout-button:hover {
+    background-color: #b71c1c;
+}
+
+/* Message */
+
+.message {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ffebee;
+    color: #c62828;
+    border-radius: 5px;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .profile-container {
+        width: 90%;
+        margin: 25px auto;
+        padding: 20px;
+    }
+
+    .profile-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .profile-row p {
+        text-align: left;
+        max-width: 100%;
+    }
+
+}
+/* Footer */
+
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: auto;
+}
+
+footer p {
+    margin:auto;
+    font-size: 15px;
+}
+ /* Profile Forms */
+
+.profile-form {
+    display: none;
+    margin-top: 20px;
+}
+
+.profile-form h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+.profile-form label {
+    display: block;
+    font-weight: bold;
+    color: #1b5e20;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.profile-form input,
+.profile-form textarea,
+.profile-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.profile-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.save-button,
+.cancel-button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #2e7d32;
+}
+
+.save-button:hover {
+    background-color: #1b5e20;
+}
+
+.cancel-button {
+    background-color: #757575;
+}
+
+.cancel-button:hover {
+    background-color: #555;
+}
+
+/* Success Message */
+
+.success-message {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-radius: 5px;
+}

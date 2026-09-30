@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+.navbar {
+    background-color: #1b5e20;
+    padding: 15px 25px;
+    text-align: left;
+}
+.navbar a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    background-color: #388e3c;
+}
+
+.home-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.registration-container {
+    width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.registration-container h1 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 10px;
+}
+
+.registration-container h2 {
+    text-align: center;
+    color: #1b5e20;
+    margin-bottom: 25px;
+}
+
+.registration-container label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.registration-container input[type="text"],
+.registration-container input[type="tel"],
+.registration-container input[type="email"],
+.registration-container input[type="password"] {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.radio-group label {
+    margin: 0 15px 0 0;
+    font-weight: normal;
+}
+
+.radio-group input[type="radio"] {
+    width: 17px;
+    height: 17px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.register-button,
+.reset-button {
+    padding: 11px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.register-button {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.reset-button {
+    background-color: #777;
+    color: white;
+}
+
+.register-button:hover {
+    background-color: #1b5e20;
+}
+
+.reset-button:hover {
+    background-color: #555;
+}
+
+.message {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+
+    .registration-container {
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+}
+
+/* Footer */
+
+footer {
+    background-color: #1b5e20;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 18px;
+}
+
+footer p {
+    font-size: 15px;
+}
